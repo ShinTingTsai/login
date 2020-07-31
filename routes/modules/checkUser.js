@@ -36,7 +36,6 @@ function checkUser(email, password) {
     return "msgNull"
   }
 
-// console.log("chkpassword",password)
   const emails = users.map( obj => obj.email)
   const index = emails.findIndex(element => element === email)
   if (index === -1) {
@@ -44,7 +43,7 @@ function checkUser(email, password) {
   }
   if (users[index].password === password) {
     // return users[index].firstName
-    console.log("user", users[index])
+    // console.log("user", users[index])
     return users[index]
   } else {
     return "msgFalse"

@@ -7,12 +7,14 @@
 - 使用者輸入帳密：email & password
 - 如果找不到 username，或是 password 錯誤，介面會顯示 "Username/Password 錯誤"
 - 如果 username + password 組合正確，使用者就能成功登入，並導向自己的 welcome page，在此頁面上會顯示登入使用者的 firstName。
+- [New] 透過cookie記錄登入狀態，網頁重新開啟也不需要再次輸入帳號密碼
 
 ## 環境建置與需求
 - Node.js v10.15.0
 - Express v4.17.1
 - Express-Handlebars v4.0.4
-
+- Body-parser v1.19.0
+- Cookie-parser v1.4.5
 
 ## 安裝與執行步驟
 - 下載專案到本機
